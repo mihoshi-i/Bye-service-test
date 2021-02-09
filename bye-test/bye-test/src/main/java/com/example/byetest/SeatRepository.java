@@ -7,6 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -16,7 +17,8 @@ public interface SeatRepository extends CrudRepository<Seat, String> {
 //    Optional<Seat> findById(long id);
 
     @Query(value = "SELECT * FROM seat_usage_status WHERE user_name = :userName AND use_start_datetime >= CURRENT_DATE() AND use_end_datetime > NOW()")
-    Optional<Seat> findByUserName(@Param("userName") String userName);
+    List<Seat> findByUserName(@Param("userName") String userName);
+//    Optional<Seat> findByUserName(@Param("userName") String userName);
 
     @Override
     <S extends Seat> S save(S entity);

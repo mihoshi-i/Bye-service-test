@@ -9,6 +9,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -28,9 +29,11 @@ public class ByeService {
 //    Optional<Seat> seatOptional = this.seatRepository.findById("15");
 //    Optional<Seat> seatOptional = this.seatRepository.findById(15);
 
-        Optional<Seat> seatOptional = this.seatRepository.findByUserName("userName");
+        List<Seat> seatList = this.seatRepository.findByUserName("userName");
+//        Optional<Seat> seatOptional = this.seatRepository.findByUserName("userName");
+//        log.info("isPresent:{}",seatOptional.isPresent());
 ////        Seat seat = seatOptional.get();
-        log.info("isPresent:{}",seatOptional.isPresent());
+        log.info("isPresent:{}",seatList);
 
 //        String id = seat.getId();
 ////        String id = this.seat.getId();

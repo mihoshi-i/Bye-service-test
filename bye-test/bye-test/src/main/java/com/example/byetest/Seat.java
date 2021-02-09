@@ -1,17 +1,15 @@
 package com.example.byetest;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
-@Entity
 @Data
 public class Seat {
 
     @Id
-    private final String id;
-    private final String seatCode;
+    private final Long id;
+    private final Long seatId;
     private final String userName;
     private final String useStartDatetime;
     private final String useEndDatetime;

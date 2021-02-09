@@ -1,10 +1,10 @@
-com/example/byetest/SeatRepository.java
- com.example.byetest.SeatRepository
-com/example/byetest/Seat.java
- com.example.byetest.Seat
 com/example/byetest/ByeTestApplication.java
  com.example.byetest.ByeTestApplication
+com/example/byetest/Seat.java
+ com.example.byetest.Seat
 com/example/byetest/ByeController.java
  com.example.byetest.ByeController
 com/example/byetest/ByeService.java
  com.example.byetest.ByeService
+com/example/byetest/SeatRepository.java
+ com.example.byetest.SeatRepository
